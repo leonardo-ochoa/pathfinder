@@ -1,0 +1,4 @@
+Briefly list any changes you made to your graph class during hw-pathfinder, and why you made those changes.
+Some changes I made to my graph was copying both a set of nodes and edges and returning the copy to
+prevent representation exposure.
+Some other changes I made was made sure my class name was in pascal case.

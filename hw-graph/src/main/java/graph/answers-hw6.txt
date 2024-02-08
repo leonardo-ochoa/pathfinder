@@ -1,0 +1,54 @@
+## CSE 331 HW6 Questions
+
+NOTE: This file is used as part of HW6, and is not due as part of the HW5
+submission. You may leave it blank for HW5.
+
+## Part 1
+###########################################################################
+
+A few examples of possible Graph representations:
+
+    A: A collection of nodes and a collection of edges.
+    B: An adjacency list, in which each node is associated with a list of its outgoing edges.
+    C: An adjacency matrix, which explicitly represents, for every pair ⟨A,B⟩ of nodes, whether there 
+       is a link from A to B, and how many.
+
+1. In two or three sentences, explain an advantage and a disadvantage of each of the
+representations listed above (for example, in terms of runtime complexity, space
+complexity, or ease of implementation).
+
+A: For this representation an advantage would be that you have access to different methods offered by the collections.
+A disadvantage would be that it is difficult to implement linking nodes to edges just using collections.
+
+B: An advantage is for this representation is that you have clear and fast access to a nodes outgoing edges. A
+disadvantage is that you only have access to outgoing edges, so it takes more work to find ingoing edges to a node.
+
+C: An advantage of this representation is that you can easily look up the edges between two nodes. A disadvantage is
+that it may be expensive to store every pair since some pairs may never link.
+
+2. In two to three sentences, describe the representation you chose and explain why you
+chose it. If you chose to use a different representation than one of the three we described
+above, be sure to list its advantages and disadvantages, too.
+
+The representation I chose was using a set to store my node. I chose this because it does not allow duplicates, and I
+could call any node from my set which stores information about all its edges, children, and parents. An advantage to
+this representation is that its easy to display all the nodes in my graph. A disadvantage is that it requires more work
+to acquire the information stored in each node.
+
+## Part 4
+###########################################################################
+
+    (Please keep your answers brief and to-the-point.)
+
+1. Describe any new tests you added and why you added them, or why you feel that your original
+tests alone are sufficient.
+
+- TestGraphD is a new test I added which is able to test edge cases such as multiple shared edges between nodes
+
+2. Did you make any changes to your specifications as you were implementing your Graph? (yes/no)
+If yes, describe your changes and why you made them.
+
+Changes I made were to replace returning a list with returning a set. I made this change since I did not want
+duplicates in my implementation and sets take care of that. Other changes I made to the specification is that I stuck
+with requires rather than using throws. I did this so the client is in charge of fallowing the specifications.
+

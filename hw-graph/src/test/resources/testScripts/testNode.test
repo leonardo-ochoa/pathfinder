@@ -1,0 +1,32 @@
+#tests a graph can be created
+#able to add nodes
+#tests the nodes
+
+# create a graph
+CreateGraph A
+
+# create a graph
+CreateGraph B
+
+# check nodes in graph A and B
+ListNodes A
+ListNodes B
+
+# add nodes to A
+AddNode A n1
+AddNode A n2
+AddNode A n3
+
+# check nodes in graph A and B
+ListNodes A
+ListNodes B
+
+# add nodes to B
+AddNode B n1
+AddNode B n2
+AddNode B n3
+AddNode B n4
+
+# check nodes in graph A and B
+ListNodes A
+ListNodes B

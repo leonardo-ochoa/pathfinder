@@ -1,0 +1,32 @@
+#tests a graph can be created
+#able to add nodes
+#tests the nodes
+
+# create a graph
+created graph A
+
+# create a graph
+created graph B
+
+# check nodes in graph A and B
+A contains:
+B contains:
+
+# add nodes to A
+added node n1 to A
+added node n2 to A
+added node n3 to A
+
+# check nodes in graph A and B
+A contains: n1 n2 n3
+B contains:
+
+# add nodes to B
+added node n1 to B
+added node n2 to B
+added node n3 to B
+added node n4 to B
+
+# check nodes in graph A and B
+A contains: n1 n2 n3
+B contains: n1 n2 n3 n4

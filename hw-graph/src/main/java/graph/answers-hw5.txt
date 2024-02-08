@@ -1,0 +1,38 @@
+## CSE 331 hw-graph Coding Questions
+
+## Part 2
+##########################
+#################################################
+
+Briefly explain why you included the operations you did and why you feel they are a sufficient
+interface to a graph. If your design includes multiple classes or interfaces, explain why you
+included each one; if not, explain whether you considered additional classes and why you decided
+not to include them.
+
+
+TODO: Your answer here!
+Apart from my graph class I included a Node class. What I had in mind for this class is that it will keep
+track of which nodes this node is a parent or children of. I also wanted to create a class that keeps track
+of the edges between nodes, but I did not know how to do that. Instead of an Edge class I think I will keep
+track of the edges the Node class.
+
+The addNode and addEdge operation help me add nodes to my graph and then assign an edge to 2 nodes(parent and child)
+The listNode operation displays all the nodes in graph and findNode looks for a specific node. FindEdge return all the
+node that have the edge whereas findEdgeFrom only return the children of the parent who share the edge. This is
+also the case for findEEdgeTo which returns all the parents who have an edge with a specific child. Children of parent
+just returns a list of all the children to a specific parent. Which is the same as parent Of children which returns a
+list of all the parents of a specific child.
+
+
+## Part 3
+###########################################################################
+
+What was your testing strategy for this assignment? How do your script tests and JUnit tests
+differ from each other (if they do), and why?
+
+
+TODO: Your answer here!
+My testing strategy was using the 0, 1, 2 node approach. This helped me tests certain nodes against each other and
+much better to test my methods. Not having many nodes also allowed me to look at edge cases and it was also better
+for me to keep track on what was going on in my graph. My script test if very limited in its tests where as my JUnit
+tests are able to handle more edge cases.

@@ -1,0 +1,38 @@
+#tests a graph can be created
+#able to add nodes and edges
+#tests different children of multiple nodes
+
+# Create a graph
+CreateGraph A
+
+# Add 4 of nodes
+AddNode A n1
+AddNode A n2
+AddNode A n3
+AddNode A n4
+
+# add edges to n1
+AddEdge A n1 n3 e13
+AddEdge A n1 n2 e12
+AddEdge A n1 n1 e11
+
+#add edges to n2
+AddEdge A n2 n3 e12
+AddEdge A n2 n3 e12
+
+#add edges to n3
+AddEdge A n3 n4 e341
+AddEdge A n3 n4 e342
+AddEdge A n3 n4 e343
+
+# list children of n1
+ListChildren A n1
+
+# list children of n2
+ListChildren A n2
+
+# list children of n3
+ListChildren A n3
+
+# list children of n4
+ListChildren A n4

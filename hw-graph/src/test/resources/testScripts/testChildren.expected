@@ -1,0 +1,38 @@
+#tests a graph can be created
+#able to add nodes and edges
+#tests different children of multiple nodes
+
+# Create a graph
+created graph A
+
+# Add 4 of nodes
+added node n1 to A
+added node n2 to A
+added node n3 to A
+added node n4 to A
+
+# add edges to n1
+added edge e13 from n1 to n3 in A
+added edge e12 from n1 to n2 in A
+added edge e11 from n1 to n1 in A
+
+#add edges to n2
+added edge e12 from n2 to n3 in A
+added edge e12 from n2 to n3 in A
+
+#add edges to n3
+added edge e341 from n3 to n4 in A
+added edge e342 from n3 to n4 in A
+added edge e343 from n3 to n4 in A
+
+# list children of n1
+the children of n1 in A are: n1(e11) n2(e12) n3(e13)
+
+# list children of n2
+the children of n2 in A are: n3(e12)
+
+# list children of n3
+the children of n3 in A are: n4(e341) n4(e342) n4(e343)
+
+# list children of n4
+the children of n4 in A are:
